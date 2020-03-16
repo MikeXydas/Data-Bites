@@ -3,6 +3,7 @@
 
 # Datasets
 *.csv
+/datasets
 
 # Pycharm Configs
 .idea
