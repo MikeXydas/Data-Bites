@@ -3,7 +3,9 @@
 
 # Datasets
 *.csv
-.idea/
+
+# Pycharm Configs
+.idea
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
