@@ -22,7 +22,7 @@ Having spent some time learning about the general field of Data Science (includi
     
   You can download and play with the notebook. The dataset that I used is not available but **any image dataset
   can be used**.  
-  **Tip:** For a greater understanding I suggest printing the `.shape` of the arrays
+  **Tip:** For a greater understanding of the notebook I suggest printing the `.shape` of the arrays
   
   
   ## Covid-19 - Importance of testing
