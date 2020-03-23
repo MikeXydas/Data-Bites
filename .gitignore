@@ -2,8 +2,8 @@
 ### Python template
 
 # Datasets
-*.csv
-/datasets
+/datasets/Crimes_-_2001_to_present.csv
+/datasets/fire-smoke
 
 # Pycharm Configs
 .idea
@@ -146,3 +146,4 @@ dmypy.json
 *.iml
 out
 gen
+!/datasets/covid_testing_importance.csv
