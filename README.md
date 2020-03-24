@@ -26,7 +26,8 @@ Having spent some time learning about the general field of Data Science (includi
   
   
   ## Covid-19 - Importance of testing
-  
+  [Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/Covid19_Testing_Importance.ipynb)  
+    
   In the field of software development one thing that makes everyone happy is finding security vulnerabilities.
   You cannot expect to have the perfect code that is fully robust and secure forever. New vulnerabilities are created 
   and the testing must be constant. As this [github post](https://github.blog/2019-11-14-announcing-github-security-lab-securing-the-worlds-code-together/) says 
