@@ -43,7 +43,9 @@ with how well the country manages to deal with the virus.
 
 ## Covid -19 - Polynomial Fitting
 
-My thesis professor is giving a Machine Learning class on his MSc students in the field of bioinformatics. Their first assignment is to gather data and forecast the future number of deaths and cases using [polynomial regression](https://en.wikipedia.org/wiki/Polynomial_regression). The main focus is to find the least complex model that fits our data using [Occam's razor](https://en.wikipedia.org/wiki/Occam%27s_razor) or as Einstein said
+My thesis professor is giving a Machine Learning class on his MSc students in the field of bioinformatics. 
+Their first assignment is to gather data and forecast the future number of deaths and cases using [polynomial regression](https://en.wikipedia.org/wiki/Polynomial_regression). 
+The main focus is to find the least complex model that fits our data using [Occam's razor](https://en.wikipedia.org/wiki/Occam%27s_razor) or as Einstein said
 >“Everything should be **made** as **simple** as possible, but no simpler.”
 
 A simple polynomial regression will not be the perfect model since it won't be able to capture events like lockdowns but the simplicity allows us of more interpretable results which I am aiming to explore.
