@@ -48,5 +48,10 @@ Their first assignment is to gather data and forecast the future number of death
 The main focus is to find the least complex model that fits our data using [Occam's razor](https://en.wikipedia.org/wiki/Occam%27s_razor) or as Einstein said
 >“Everything should be **made** as **simple** as possible, but no simpler.”
 
-A simple polynomial regression will not be the perfect model since it won't be able to capture events like lockdowns but the simplicity allows us of more interpretable results which I am aiming to explore.
+I achieve this using the [BIC](https://en.wikipedia.org/wiki/Bayesian_information_criterion)
+metric which penalties higher complexity models (higher degree polynomials).  
+  
+A simple polynomial regression will not be the perfect model since it won't be able to 
+capture events like lockdowns but the simplicity allows us of more interpretable results
+ which I am aiming to explore.
    
