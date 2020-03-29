@@ -146,4 +146,4 @@ dmypy.json
 *.iml
 out
 gen
-!/datasets/covid_testing_importance.csv
+!/datasets/covid_19_testing_importance.csv

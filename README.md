@@ -41,7 +41,7 @@ Covid-19 is something much more than a security vulnerability. However, I will a
 that some principles apply in this case too. We will attempt to show if the number of tests correlates
 with how well the country manages to deal with the virus. 
 
-## Covid -19 - Polynomial Fitting
+## Covid -19 - Time Series Forecasting
 
 My thesis professor is giving a Machine Learning class on his MSc students in the field of bioinformatics. 
 Their first assignment is to gather data and forecast the future number of deaths and cases using [polynomial regression](https://en.wikipedia.org/wiki/Polynomial_regression). 
@@ -50,8 +50,10 @@ The main focus is to find the least complex model that fits our data using [Occa
 
 I achieve this using the [BIC](https://en.wikipedia.org/wiki/Bayesian_information_criterion)
 metric which penalties higher complexity models (higher degree polynomials).  
+
+I then proceed to evaluate other models such as [ARIMA](https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average).
   
-A simple polynomial regression will not be the perfect model since it won't be able to 
+A simple time series forecasting model will not be the perfect model since it won't be able to 
 capture events like lockdowns but the simplicity allows us of more interpretable results
  which I am aiming to explore.
    
