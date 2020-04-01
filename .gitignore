@@ -5,6 +5,8 @@
 /datasets/Crimes_-_2001_to_present.csv
 /datasets/fire-smoke
 
+/assignments/*
+
 # Pycharm Configs
 .idea
 
@@ -147,3 +149,5 @@ dmypy.json
 out
 gen
 !/datasets/covid_19_testing_importance.csv
+!/assignments/
+!/assignments/

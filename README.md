@@ -12,8 +12,9 @@ Having spent some time learning about the general field of Data Science (includi
   
   
   ## PCA on Fire Images :fire:
-  [Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/PCA_On_Fire_Images.ipynb)  
-    
+  [Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/PCA_On_Fire_Images.ipynb)    
+   *Tags: PCA, noise reduction, image processing*  
+  
   A friend of mine is having his thesis on fire recognition on images. Also, I have used
   PCA on many tasks of dimensionality reduction or, in general, study about the meaning of
   eigenvectors of the covariance matrix of a dataset.
@@ -26,7 +27,8 @@ Having spent some time learning about the general field of Data Science (includi
   
   
   ## Covid-19 - Importance of testing
-  [Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/Covid19_Testing_Importance.ipynb)  
+  [Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/Covid19_Testing_Importance.ipynb)    
+  *Tags: data gathering, visualization*  
     
   In the field of software development, one thing that makes everyone happy is finding security vulnerabilities.
   You cannot expect to have the perfect code that is fully robust and secure forever. New vulnerabilities are created 
@@ -42,6 +44,8 @@ that some principles apply in this case too. We will attempt to show if the numb
 with how well the country manages to deal with the virus. 
 
 ## Covid -19 - Time Series Forecasting
+[Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/Covid19_Timeseries_Forecasting.ipynb)  
+*Tags: timeseries analysis, polynomial regression, ARIMA*
 
 My thesis professor is giving a Machine Learning class on his MSc students in the field of bioinformatics. 
 Their first assignment is to gather data and forecast the future number of deaths and cases using [polynomial regression](https://en.wikipedia.org/wiki/Polynomial_regression). 
@@ -57,3 +61,8 @@ A simple time series forecasting model will not be the perfect model since it wo
 capture events like lockdowns but the simplicity allows us of more interpretable results
  which I am aiming to explore.
    
+ **Disclaimer**: In any way should any of the models I have written be actually used for forecasting
+ of future number of cases. I have done this for educational reasons. There is the field
+ of [epidemiology](https://en.wikipedia.org/wiki/Epidemiology) which one should consult for
+ accurate forecasting which takes into account more factors than the shape of the current curve.
+
