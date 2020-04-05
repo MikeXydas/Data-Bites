@@ -11,21 +11,6 @@ Having spent some time learning about the general field of Data Science (includi
   a good title) on random topics that I consider that I could extract nice insights, visualizations, etc.  
   
   
-  ## PCA on Fire Images
-  [Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/PCA_On_Fire_Images.ipynb)    
-   *Tags: PCA, noise reduction, image processing*  
-  
-  A friend of mine is having his thesis on fire recognition on images. Also, I have used
-  PCA on many tasks of dimensionality reduction or, in general, study about the meaning of
-  eigenvectors of the covariance matrix of a dataset.
-      
-  So combining the above I thought of using **PCA as a technique of noise reduction** on these fire images.
-    
-  You can download and play with the notebook. The dataset that I used is not available but **any image dataset
-  can be used**.  
-  **Tip:** For a greater understanding of the notebook I suggest printing the `.shape` of the arrays
-  
-  
   ## Covid-19 - Importance of testing
   [Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/Covid19_Testing_Importance.ipynb)    
   *Tags: data gathering, visualization*  
@@ -66,3 +51,16 @@ capture events like lockdowns but the simplicity allows us of more interpretable
  of [epidemiology](https://en.wikipedia.org/wiki/Epidemiology) which one should consult for
  accurate forecasting which takes into account more factors than the shape of the current curve.
 
+  ## PCA on Fire Images
+  [Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/PCA_On_Fire_Images.ipynb)    
+   *Tags: PCA, noise reduction, image processing*  
+  
+  A friend of mine is having his thesis on fire recognition on images. Also, I have used
+  PCA on many tasks of dimensionality reduction or, in general, study about the meaning of
+  eigenvectors of the covariance matrix of a dataset.
+      
+  So combining the above I thought of using **PCA as a technique of noise reduction** on these fire images.
+    
+  You can download and play with the notebook. The dataset that I used is not available but **any image dataset
+  can be used**.  
+  **Tip:** For a greater understanding of the notebook I suggest printing the `.shape` of the arrays
