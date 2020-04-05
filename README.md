@@ -11,7 +11,7 @@ Having spent some time learning about the general field of Data Science (includi
   a good title) on random topics that I consider that I could extract nice insights, visualizations, etc.  
   
   
-  ## PCA on Fire Images :fire:
+  ## PCA on Fire Images
   [Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/PCA_On_Fire_Images.ipynb)    
    *Tags: PCA, noise reduction, image processing*  
   
