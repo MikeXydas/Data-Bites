@@ -37,10 +37,6 @@ kiwisolver==1.1.0
 lxml==4.5.0
 MarkupSafe==1.1.1
 matplotlib==3.1.2
-MDAnalysis==0.20.1
-MDAnalysisData==0.8.0
-MDAnalysisTests==0.20.1
-mdtraj==1.9.3
 mistune==0.8.4
 mmtf-python==1.1.2
 mock==3.0.5
