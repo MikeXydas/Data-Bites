@@ -64,3 +64,10 @@ capture events like lockdowns but the simplicity allows us of more interpretable
   You can download and play with the notebook. The dataset that I used is not available but **any image dataset
   can be used**.  
   **Tip:** For a greater understanding of the notebook I suggest printing the `.shape` of the arrays
+  
+  ## Airline Reviews Analysis (**In progress**)
+  
+  I really like airplanes. I like travelling in them, learning about them and flying them (thankfully for everyone
+  in simulators). So I was thinking of a small project in this field and came up with analysis of airline reviews.
+  We will find which features seem to be the most important for a positive experience and fit simple models to predict 
+  future rating reviews.

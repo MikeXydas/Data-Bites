@@ -4,6 +4,7 @@
 # Datasets
 /datasets/Crimes_-_2001_to_present.csv
 /datasets/fire-smoke
+/datasets/airline_reviews.csv
 
 /assignments/*
 
@@ -151,3 +152,7 @@ gen
 !/datasets/covid_19_testing_importance.csv
 !/assignments/
 !/assignments/
+!/datasets/airline_reviews.csv
+!/datasets/airline_reviews.csv
+/datasets/airline_reviews.csv
+/datasets/capstone_airline_reviews3.xlsx
