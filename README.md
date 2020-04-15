@@ -12,7 +12,7 @@ Having spent some time learning about the general field of Data Science (includi
   
   
   ## Covid-19 - Importance of testing
-  [Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/Covid19_Testing_Importance.ipynb)    
+  [Nb Viewer](https://nbviewer.jupyter.org/github/MikeXydas/Weekend-EDAs/blob/master/Covid19_Testing_Importance.ipynb)    
   *Tags: data gathering, visualization*  
     
   In the field of software development, one thing that makes everyone happy is finding security vulnerabilities.
@@ -29,7 +29,7 @@ that some principles apply in this case too. We will attempt to show if the numb
 with how well the country manages to deal with the virus. 
 
 ## Covid -19 - Time Series Forecasting
-[Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/Covid19_Timeseries_Forecasting.ipynb)  
+[Nb Viewer](https://nbviewer.jupyter.org/github/MikeXydas/Weekend-EDAs/blob/master/Covid19_Timeseries_Forecasting.ipynb)  
 *Tags: timeseries analysis, polynomial regression, ARIMA*
 
 My thesis professor is giving a Machine Learning class on his MSc students in the field of bioinformatics. 
@@ -52,7 +52,7 @@ capture events like lockdowns but the simplicity allows us of more interpretable
  accurate forecasting which takes into account more factors than the shape of the current curve.
 
   ## PCA on Fire Images
-  [Jupyter Notebook](https://github.com/MikeXydas/Weekend-EDAs/blob/master/PCA_On_Fire_Images.ipynb)    
+  [Nb Viewer](https://nbviewer.jupyter.org/github/MikeXydas/Weekend-EDAs/blob/master/PCA_On_Fire_Images.ipynb)    
    *Tags: PCA, noise reduction, image processing*  
   
   A friend of mine is having his thesis on fire recognition on images. Also, I have used
@@ -66,7 +66,9 @@ capture events like lockdowns but the simplicity allows us of more interpretable
   **Tip:** For a greater understanding of the notebook I suggest printing the `.shape` of the arrays
   
   ## Airline Reviews Analysis (**In progress**)
-  
+  [Nb Viewer](https://nbviewer.jupyter.org/github/MikeXydas/Weekend-EDAs/blob/master/Airline_Reviews_Analysis.ipynb)  
+    
+    
   I really like airplanes. I like travelling in them, learning about them and flying them (thankfully for everyone
   in simulators). So I was thinking of a small project in this field and came up with **analysis of airline reviews**.  
   We will find which features seem to be the most important for a positive experience and fit simple models to predict 
