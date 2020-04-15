@@ -156,3 +156,4 @@ gen
 !/datasets/airline_reviews.csv
 /datasets/airline_reviews.csv
 /datasets/capstone_airline_reviews3.xlsx
+/datasets/cache/
