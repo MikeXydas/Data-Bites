@@ -65,7 +65,7 @@ capture events like lockdowns but the simplicity allows us of more interpretable
   can be used**.  
   **Tip:** For a greater understanding of the notebook I suggest printing the `.shape` of the arrays
   
-  ## Airline Reviews Analysis (**In progress**)
+  ## Airline Reviews Analysis
   [Nb Viewer](https://nbviewer.jupyter.org/github/MikeXydas/Weekend-EDAs/blob/master/Airline_Reviews_Analysis.ipynb)  
     
     
