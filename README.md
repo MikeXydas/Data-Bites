@@ -1,16 +1,25 @@
 # Weekend EDAs
-
-Having spent some time learning about the general field of Data Science (including but not limited to ML,
- hypothesis testing, data cleaning and extraction) I have decided to get my hands dirty 
- with some subjectively fun projects.
  
  My hands-on experience until now with data science is from assignments from my university, MOOCs
- and my current thesis in [Molecular Dynamics](https://en.wikipedia.org/wiki/Molecular_dynamics).
+ and my thesis in [Molecular Dynamics](https://en.wikipedia.org/wiki/Molecular_dynamics).
  Although my thesis is interesting I was getting way too specialized tasks and knowledge and felt like
- doing something more general. So I am spending some time some days (not necessarily weekends but it makes for
-  a good title) on random topics that I consider that I could extract nice insights, visualizations, etc.  
+ doing something more general. So I am spending some time some days (not necessarily weekends, but it makes for
+  a good title) on random topics that I consider that I could extract nice insights, visualizations and in general 
+ have fun.  
   
-  
+
+ ## Gaussian Processes and DnD  
+ [Nb Viewer](https://nbviewer.jupyter.org/github/MikeXydas/Weekend-EDAs/blob/master/Gaussian_Processes_and_DnD.ipynb)  
+ *Tags: Gaussian processes, regression, pymc3*
+
+Recently, I started learning about Gaussian processes (GPs). Gaussian processes is a flexible tool
+that can model many problems that we deal with in the field of Data Science. In this notebook, I showcase a small part
+of that flexibility dealing with a simple regression problem, predicting challenge rating of dnd monsters given their
+health points. I start by fitting a polynomial model using MCMC which I compare with the least squares fit. Then, I use 
+a gaussian process to solve this regression problem and present its advantages over the two methods above.
+
+
+
   ## Covid-19 - Importance of testing
   [Nb Viewer](https://nbviewer.jupyter.org/github/MikeXydas/Weekend-EDAs/blob/master/Covid19_Testing_Importance.ipynb)    
   *Tags: data gathering, visualization*  
@@ -67,7 +76,7 @@ capture events like lockdowns but the simplicity allows us of more interpretable
   
   ## Airline Reviews Analysis
   [Nb Viewer](https://nbviewer.jupyter.org/github/MikeXydas/Weekend-EDAs/blob/master/Airline_Reviews_Analysis.ipynb)  
-  *Tags: text analysis, classification debugging*  
+  *Tags: text analysis, classification*  
     
   I really like airplanes. I like travelling in them, learning about them and flying them (thankfully for everyone
   in simulators). So I was thinking of a small project in this field and came up with **analysis of airline reviews**.  
