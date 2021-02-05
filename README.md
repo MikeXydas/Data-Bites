@@ -7,6 +7,17 @@
   a good title) on random topics that I consider that I could extract nice insights, visualizations and in general 
  have fun.  
   
+  
+  ## PageRank from Scratch  
+ [Nb Viewer](https://nbviewer.jupyter.org/github/MikeXydas/Weekend-EDAs/blob/master/PageRank_from_Scratch.ipynb)  
+ *Tags: PageRank, graph node importance*
+
+PageRank is a well-known algorithm proposed by the founders of Google and had a major role at its success when it first
+started as a search engine. In general, PageRank aims at finding the most important nodes on a huge graph of webpages.
+In order to understand its inner workings I implemented it from scratch using `numpy` only. I start by assuming a perfect
+graph (no spider traps, no dead-ends) and gradually lift these assumptions. Finally, I examine the memory complexity 
+and present the final algorithm which could work on any graph regardless of its shape and size.
+
 
  ## Gaussian Processes and DnD  
  [Nb Viewer](https://nbviewer.jupyter.org/github/MikeXydas/Weekend-EDAs/blob/master/Gaussian_Processes_and_DnD.ipynb)  
