@@ -85,12 +85,4 @@ capture events like lockdowns but the simplicity allows us of more interpretable
   can be used**.  
   **Tip:** For a greater understanding of the notebook I suggest printing the `.shape` of the arrays
   
-  ## Airline Reviews Analysis
-  [Nb Viewer](https://nbviewer.jupyter.org/github/MikeXydas/Weekend-EDAs/blob/master/Airline_Reviews_Analysis.ipynb)  
-  *Tags: text analysis, classification*  
-    
-  I really like airplanes. I like travelling in them, learning about them and flying them (thankfully for everyone
-  in simulators). So I was thinking of a small project in this field and came up with **analysis of airline reviews**.  
-  We will find which features seem to be the most important for a positive experience and fit simple models to predict 
-  future rating reviews by their text. 
-  The question we want to answer is **what should airlines focus to improve**.
+
