@@ -1,11 +1,9 @@
-# Weekend EDAs
+# Data-Bites
  
- My hands-on experience until now with data science is from assignments from my university, MOOCs
- and my thesis in [Molecular Dynamics](https://en.wikipedia.org/wiki/Molecular_dynamics).
- Although my thesis is interesting I was getting way too specialized tasks and knowledge and felt like
- doing something more general. So I am spending some time some days (not necessarily weekends, but it makes for
-  a good title) on random topics that I consider that I could extract nice insights, visualizations and in general 
- have fun.  
+ A series of bite sized projects in the fields of data science, engineering and machine learning explored in blog-like notebooks.
+ Through my studying years both undergraduate and graduate, I discovered that in order to fully understand something, you must play with it. Well,
+ this repo is a Jupyter playground of algorithms, technologies and frameworks that I personally find interesting. Hopefully, if you have accidentally
+ stumbled upon this repo, you will find something interesting too. Feel free to send any feedback.
   
   
   ## PageRank from Scratch  
