@@ -1,7 +1,7 @@
 # Data-Bites
  
- A series of bite sized projects in the fields of data science, engineering and machine learning explored in blog-like notebooks.
- Through my studying years both undergraduate and graduate, I discovered that in order to fully understand something, you must play with it. Well,
+ A series of bite sized projects in the fields of data science, data engineering and machine learning, explored in blog-like notebooks.
+ Through my studying years, both undergraduate and graduate, I discovered that in order to fully understand something, you must "play" with it. Well,
  this repo is a Jupyter playground of algorithms, technologies and frameworks that I personally find interesting. Hopefully, if you have accidentally
  stumbled upon this repo, you will find something interesting too. Feel free to send any feedback.
   
