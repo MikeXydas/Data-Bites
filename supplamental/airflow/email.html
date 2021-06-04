@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valerios1910 Report</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+
+        /* ul {
+            list-style-type: none;
+        } */
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Valerios1910 Last Day Chess Results</h1>
+    <ol>
+    {% for game in games %}
+    <li>
+        <table>
+            <tr>
+                <td>Opponent: {{game['opp_username']}}</td>
+                <td>Opp. Rating: {{game['opp_rating']}}</td>
+                <td>Result: {{game['result']}}</td>
+            </tr>
+            <tr>
+                <td>Color: {{game['color']}}</td>
+                <td>Time Control: {{game['time_control']}}</td>
+                <td>Datetime: {{game['datetime']}}</td>
+            </tr>
+    </table>
+    </li>
+    <br><br>
+    {% endfor %}
+    </ol>
+</body>
+</html>

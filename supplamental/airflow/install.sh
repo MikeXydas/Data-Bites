@@ -24,3 +24,9 @@ airflow users create \
 
 # Command to run the webserver
 # airflow webserver --port 8080
+
+# Run the scheduler
+# airflow scheduler
+
+# Test a task of a tag separately
+# airflow tasks test chess_progress_report fill_sql_table 2021-06-04
