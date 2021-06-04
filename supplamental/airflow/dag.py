@@ -6,7 +6,7 @@ from airflow.operators.python import PythonOperator
 from airflow.providers.mysql.operators.mysql import MySqlOperator
 from airflow.utils.dates import days_ago
 
-from utils import fill_sql_table, get_games_from_db_and_render_html
+from utils import fill_sql_table, get_games_from_db_and_render_html, write_html_report_to_s3
 
 
 default_args = {
@@ -56,6 +56,7 @@ with DAG(
         python_callable=get_games_from_db_and_render_html
     )
 
+    # _____ Send email of the html content we have stored in XCom _____
     Task_Send_Email = EmailOperator(
         task_id="send_match_report",
         to="mikexydas@gmail.com",
@@ -64,4 +65,10 @@ with DAG(
                          key='chess_report_html_content') }}",
     )
 
-    Task_Create_Table >> Task_Fill_Table >> Task_Render_Html_Results >> Task_Send_Email
+    # _____ Storing the report to an S3 bucket _____
+    Task_Store_Report_to_S3 = PythonOperator(
+        task_id="store_report_to_s3", 
+        python_callable=write_html_report_to_s3
+    )
+
+    Task_Create_Table >> Task_Fill_Table >> Task_Render_Html_Results >> [Task_Send_Email, Task_Store_Report_to_S3]

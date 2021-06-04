@@ -5,8 +5,9 @@ from datetime import datetime, timedelta
 from jinja2 import Environment, FileSystemLoader
 
 from airflow.models import Variable
-from airflow.hooks.dbapi_hook import DbApiHook
 from airflow.hooks.mysql_hook import MySqlHook
+from airflow.hooks.S3_hook import S3Hook
+
 
 
 def get_valerios_last_games() -> dict:
@@ -89,3 +90,20 @@ def get_games_from_db_and_render_html(**context):
     # Store the html file as airflow metadata using Xcom
     task_instance = context["task_instance"]
     task_instance.xcom_push(key="chess_report_html_content", value=html_content)
+
+
+def write_html_report_to_s3(**context):
+    hook = S3Hook(aws_conn_id="s3_report_bucket")
+    print("HEREE")
+    task_instance = context["task_instance"]
+    print(task_instance)
+    print(task_instance.xcom_pull(task_ids='get_games_and_render_html', \
+                         key='chess_report_html_content'))
+
+    hook.load_string(
+        string_data=task_instance.xcom_pull(task_ids='get_games_and_render_html', \
+                         key='chess_report_html_content'),
+        key=f"chess_reports/valerios_chess_report_{datetime.now().strftime('%Y_%m_%d')}",
+        bucket_name=Variable.get("CHESS_S3_BUCKET"),
+        replace=True,
+    )
