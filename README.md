@@ -27,6 +27,7 @@ tool.
 In our case we want to schedule a daily report that summarizes Valerios' last day chess games. Valerios (valerios1910 is his nickname in the chess streets)
  is a friend of mine, who is currently on the journey of becoming a GM (no, not really, but he is good). Our goal is to monitor his progress through daily reports.
 ![Alt text](img/chess_reporting_dag.png)
+
 Airflow is a really nice tool for workflows like these, able to scale to an infinite amount of scheduled workflows.
 
 Now concerning running, things are a bit trickier. Firstly, there is not a Jupyter notebook, the code is included in
