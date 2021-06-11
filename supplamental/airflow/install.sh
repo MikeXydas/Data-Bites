@@ -22,6 +22,9 @@ airflow users create \
     --role Admin \
     --email mikexydas@gmail.com
 
+
+### A set of useful commands for reference ###
+
 # Command to run the webserver
 # airflow webserver --port 8080
 

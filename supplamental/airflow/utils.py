@@ -12,7 +12,7 @@ from airflow.hooks.S3_hook import S3Hook
 
 def get_valerios_last_games() -> dict:
     """
-    We will get valerios1910 previous day chess games.
+    We get valerios1910 previous day chess games from chess.com API.
     """
     chess_com_endpoint = Variable.get('CHESS_COM_ENDPOINT')
 
@@ -46,6 +46,18 @@ def get_valerios_last_games() -> dict:
 
 
 def fill_sql_table():
+    """
+    We iterate through the results (valerios' games) received using  get_valerios_last_games()
+    and store them in a MySQL database. Note that if the table already exists we first delete it.
+
+    The attributes we keep are:
+    * Opponent's username
+    * Opponent's rating (when the game ended)
+    * Result (WIN or LOSE)
+    * Time control setting (Rapid, Blitz, Bullet)
+    * The time of the game
+    * The color that valerios' played (WHITE or BLACK)
+    """
     insert_game_query = """
         INSERT INTO chess_db.MatchHistory (
             OpponentUsername,
@@ -71,6 +83,10 @@ def fill_sql_table():
 
 
 def get_games_from_db_and_render_html(**context):
+    """
+    Query the game information from the MySQL database and render a not so beautiful html report.
+    We use jinja templating capabilities to fill the template named `email.html`.
+    """
     columns = ("opp_username", "opp_rating", "result", "time_control", "datetime", "color")
     select_query = """
         SELECT OpponentUsername, OpponentRating, Result, TimeControl, StartDatetime, "Color"
@@ -93,8 +109,12 @@ def get_games_from_db_and_render_html(**context):
 
 
 def write_html_report_to_s3(**context):
+    """
+    We not only send the report to my mail but we also store it on an S3 free bucket.
+    This mainly done to showcase the branching of its DAGs that Airflow allows.
+    """
     hook = S3Hook(aws_conn_id="s3_report_bucket")
-    print("HEREE")
+    
     task_instance = context["task_instance"]
     print(task_instance)
     print(task_instance.xcom_pull(task_ids='get_games_and_render_html', \
