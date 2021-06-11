@@ -17,6 +17,27 @@ graph (no spider traps, no dead-ends) and gradually lift these assumptions. Fina
 and present the final algorithm which could work on any graph regardless of its shape and size.
 
 
+ ## Airflowing Valerios' Chess Progress Reports
+*Tags: Airflow, report scheduling, monitoring*
+
+This mini project is a little bit different. I saw a [really nice presentation](https://www.youtube.com/watch?v=YWtfU0MQZ_4&ab_channel=PyConDEPyConDE) on Airflow and it seemed like a useful and well-made
+tool.
+> Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.
+
+In our case we want to schedule a daily report that summarizes Valerios' last day chess games. Valerios (valerios1910 is his nickname in the chess streets)
+ is a friend of mine, who is currently on the journey of becoming a GM (no, not really, but he is good). Our goal is to monitor his progress through daily reports.
+![Alt text](img/chess_reporting_dag.png)
+Airflow is a really nice tool for workflows like these, able to scale to an infinite amount of scheduled workflows.
+
+Now concerning running, things are a bit trickier. Firstly, there is not a Jupyter notebook, the code is included in
+the `airflow/` directory. Then we must follow these steps:
+
+1. Install Airflow, I have provided a `install.sh` for Ubuntu, but I suggest looking into Airflow documentation since you must set a number of environmental variables
+2. Start the scheduler, `airflow scheduler`
+3. Start the webserver for a super cool UI, `airflow webserver --port 8080`
+
+You can look into the code (`airflow/`) which has some comments but I suggest first reading the [tutorial in airflow](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html).
+
  ## Gaussian Processes and DnD  
  [Nb Viewer](https://nbviewer.jupyter.org/github/MikeXydas/Weekend-EDAs/blob/master/Gaussian_Processes_and_DnD.ipynb)  
  *Tags: Gaussian processes, regression, pymc3*
